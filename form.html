@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <form class="com">
+    <div>
+        <h1 id="title">Sample <span>Survey</span><span style="color: #259756;"> Form</span></h1>
+        <h2 id="description">Just a model of survey-form </h2>
+    </div>
+    <form id="survey-form" action="#">
+            <fieldset style="align-items: center;">
+        <label class="block" for="name" id="name-label">Name</label>
+        <input class="input" name="name" type="text" placeholder="Enter Your Full Name" required>
+    </fieldset>
+    <fieldset>
+        <label for="email" id="email-label" class="block">Email ID</label>
+        <input class="input" name="email"  type="email" placeholder="Enter a valid Email id" required></fieldset>
+        <fieldset>
+            <label class="block" for="number" id="number-label">Number</label>
+            <input class="input" name="number"  type="number" placeholder="Enter your mobile number" required min="6000000000" max="9999999999">
+        </fieldset>
+        <fieldset>
+            <p class="block">What is your Gender?</p>
+            <select class="input" id="dropdown" name="Gender" required>
+                <option disabled selected value>Select your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="third-gender">Third-Gender</option>
+                <option value="No Say">Prefer not to say</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p class="block">Mobile Phone you use </p>
+                <label class="input">
+                    <input value="android" type="radio" name="mobile"  checked>Android
+                    <input value="apple" type="radio" name="mobile">Apple
+                    <input value="Other" type="radio" name="mobile">Other
+                </label>
+        </fieldset>
+        <fieldset>
+            <p class="block">Favourite sport(s)?</p>
+            <div>
+                <label for="cricket">
+                    <input name="cricket" type="checkbox" value="cricket">Cricket 
+                </label>
+                <label for="foot-ball">
+                    <input name="foot-ball" type="checkbox" value="foot-ball">Football
+                </label>
+                <label for="volleyball">
+                    <input name="volleyball" type="checkbox" value="foot-ball">Volleyball
+                </label>
+                <label for="kabadi">
+                    <input name="kabadi" type="checkbox" value="kabadi">Kabadi
+                </label>
+                <label for="mobile">
+                    <input name="mobile" type="checkbox" value="mobile-games">Mobile-Games
+                </label>
+                <label for="PC">
+                    <input name="PC" type="checkbox" value="PC-games">PC Games
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <p class="block">Tell us more about your-self</p>
+            <textarea id="tex" placeholder="Start writing from here......"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
