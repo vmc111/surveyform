@@ -5,11 +5,17 @@
 }
 
 .input{
-    width:40vh ;
-    height: 4vh;
+    width:90vh ;
+    height: 10vh;
 }
 
+.com{
+    background-image: url("survey.jpg");
+}
 
+#main{
+    background-color: gold !important;
+}
 
 h1{
     text-align: center;
@@ -39,17 +45,21 @@ span{
 }
 
 .block {
-    
     font-size: 20px;
     display: block;
     text-align: center;
-    margin: auto;
     padding: 15px 5px 15px 5px;
+    margin: 15px 30% 0px 30% ;
 }
 
 fieldset{
+    width: 45%;
     background-color: aqua;
     text-align: center;
-    margin: 15px 30% 0px 30%;
+    margin: 15px 30% 0px 30% ;
    
+}
+
+form{
+    background-color: goldenrod;
 }
