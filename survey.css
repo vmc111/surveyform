@@ -11,6 +11,7 @@
 
 .com{
     background-image: url("survey.jpg");
+    background-size: cover;
 }
 
 #main{
